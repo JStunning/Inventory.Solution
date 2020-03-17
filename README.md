@@ -1,6 +1,6 @@
 # Inventory
 
-#### _Track Inventory, 3/6/2020_
+#### _Track Inventory, 3/17/2020_
 
 #### By _**Jack Dunning**_
 

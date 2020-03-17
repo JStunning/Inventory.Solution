@@ -4,12 +4,14 @@
 
 @model Inventory.Models.Collection
 
-<h4>Add a new Collection</h4>
+<h2>Add a new Collection</h2>
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.Name)
-    @Html.TextBoxFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)<br>
+    @Html.LabelFor(model => model.Description)
+    @Html.TextBoxFor(model => model.Description)<br>
 
-    <input type="submit" value="Add new Collection" />
+    <input class="button" type="submit" value="Add new Collection" />
 }
 <p>@Html.ActionLink("Show all Collections", "Index")</p>
