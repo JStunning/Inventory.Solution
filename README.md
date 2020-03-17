@@ -20,31 +20,31 @@ _This is an app that can add a Collection to the Collection list and add a Item 
 
   * _Spec:_ When user opens localhost:5000.
       * _Input:_ user opens web app
-      * _Output:_ homepage should open "Welcome to a Stunning Vendor Tracker web app!" and also give you some options "View Vendors" and "Add a new Vendor"
+      * _Output:_ homepage should open "Welcome to the Inventory Sheet!" and also give you a link "See Inventory"
 
-  * _Spec:_ if user clicks "Add new Vendor".
-      * _Input:_ clicks "Add new Vendor"
-      * _Output:_ should route user to Vendor form
+  * _Spec:_ if user clicks "See inventory".
+      * _Input:_ clicks "See inventory"
+      * _Output:_ should route user to empty inventory list
 
-  * _Spec:_ if user enters a vendor name and clicks the add button.
-      * _Input:_ user enters "Bob's Burgers" and clicks add
-      * _Output:_ should route user to Vendor List with the vendor added
+  * _Spec:_ if user is on empty list page and clicks "Add new collection" link
+      * _Input:_ user clicks add
+      * _Output:_ should route user to "Add a new Collection" page with a small form
 
-  * _Spec:_ if user clicks a vendor name it should show an empty orders list, a Order Total of $0 a link to add a new order and a button clear all orders.
-      * _Input:_ user clicks "Bob's Burgers"
-      * _Output:_ should route user to a empty Vendor Orders List, a Order Total of $0 a link to add a new order and a button clear all orders
+  * _Spec:_ if user is on "Add a new Collection" page and fills out form name and description and clicks "Add new Collection"
+      * _Input:_ user fills out form and click "Add new Collection" button
+      * _Output:_ should route user to a Inventory list with their collection now there
 
-  * _Spec:_ if user clicks "Add a new Order"
-      * _Input:_ user clicks "Add a new Order"
-      * _Output:_ should route user to a heading "Add Order to Bob's Burgers", empty form with "Order title", "Order Description", "Order Date" and "Add" button 
+  * _Spec:_ if user clicks a collection name in the inventory list
+      * _Input:_ user clicks "{Collection Name}"
+      * _Output:_ should route user to "Collection Details" page with the Name and Description in which they have entered. Also has link back to Collection List and has a "Delete Collection" link
 
-  * _Spec:_ if user clicks "Add" with the form complete
-      * _Input:_ user clicks "Add" "Order title: Buns" "Order Description: I want to purchase some buns, thanks." "Order Date: 3/13/20"
-      * _Output:_ should route user back to the orders list with Buns now added and the Orders Total Updated to "Orders Total: $5"
+  * _Spec:_ if user clicks "Delete Collection"
+      * _Input:_ user clicks "Delete Collection"
+      * _Output:_ should route user to "Delete?" page, it shows the name of the collection, a delete button and a "Back to List" link
 
-  * _Spec:_ if user clicks "Buns" in the Vendors Orders List
-      * _Input:_ user clicks "Buns" 
-      * _Output:_ should route user to page that has Vendor name, Order name, Order description, Order date, the price and links back to Order list and Vendor list
+  * _Spec:_ if user clicks "Delete" button on "Delete?" page
+      * _Input:_ user clicks "Delete" 
+      * _Output:_ should route user back to the "Inventory" page with the collection now removed
 
 ## Known Bugs
 
